@@ -29,11 +29,53 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    
+    <!-- Custom styles for this template -->
+    <style>
+         
+         .animated {
+            background-image: url(/misc/tousif.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-top:95px;
+            margin-bottom:60px;
+            -webkit-animation-duration: 8s;animation-duration: 8s;
+            -webkit-animation-fill-mode: both;animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+         
+         @keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+         
+         .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+         }
+         #dim {
+            position:fixed;
+            padding:0;
+            margin:0;
+        
+            top:0;
+            left:0;
+        
+            width: 100%;
+            height: 100%;
+            background:rgba(255,255,255,0.5);
+            background-color:white;
+            z-index:9;
+         }
+      </style>
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body style="background-image:url(misc/seamless_paper_texture.png);">
+    <img id = "dim" class = "animated fadeOut" src = "misc/tousif.jpg"/>
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -212,7 +254,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+      $("#dim").click( function() {
+        $('#dim').remove();
+      });
+    </script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
