@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../misc/favicon.ico">
 
-    <title>Memento Mori</title>
+    <title>Gallery</title>
 
 	
     <!-- Bootstrap core CSS -->
@@ -17,20 +17,26 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-	
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+         width: 70%;
+         height: 518px;
+         margin: auto;
+      }
+    </style>
+    
   </head>
 
   <body style="background-image:url(../../misc/seamless_paper_texture.png);">
-
+    
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -43,51 +49,52 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Tech Taqwa</a>
+              <a class="navbar-brand" href="/">Tech Taqwa</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The Race Against Time<span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The Race Against Time<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-					<li><a href="../../race/">Overture</a></li>
-                    <li><a href="../qualities-of-the-prophet">Qualities of the Prophet</a></li>
-                    <li><a href="../before-the-horn-blows">Before the Horn Blows</a></li>
-                    <li><a href="../worldly-detox">A Worldly Detox</a></li>
-                    <li><a href="../memento-mori">Memento mori</a></li>
+				          	<li><a href="/race/">Overture</a></li>
+                    <li><a href="/race/qualities-of-the-prophet">Qualities of the Prophet</a></li>
+                    <li><a href="/race/before-the-horn-blows">Before the Horn Blows</a></li>
+                    <li><a href="/race/worldly-detox">A Worldly Detox</a></li>
+                    <li><a href="/race/memento-mori">Memento mori</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MSA<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="../../msa">About MSA</a></li>
-                    <li><a href="#">Meetings and Events</a></li>
-                    <li><a href="#">Prayer Hall</a></li>
-					<li><a href="#">The Board</a></li>
+                    <li><a href="/msa">About MSA</a></li>
+                    <li><a href="/msa/meetings-and-events/">Meetings and Events</a></li>
+                    <li><a href="/msa/jummah/">Jummah</a></li>
+					<li><a href="/msa/the-board/">The Board</a></li>
                   </ul>
                 </li>
 				<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MIST<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="../../mist">About MIST</a></li>
-                    <li><a href="#">Humans of Tech Taqwa</a></li>
-                    <li><a href="#">Blast to the Past</a></li>
+                    <li><a href="/mist">About MIST</a></li>
+                    <li><a href="/mist/humans-of-tech-taqwa/">Humans of Tech Taqwa</a></li>
+                     
                   </ul>
                 </li>
-				<li><a href="blog/">Blog</a></li>
+				<li><a href="/blog/">Blog</a></li>
 				<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Islamic Voyage<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Prayer Times</a></li>
-                    <li><a href="#">Quran</a></li>
-                    <li><a href="#">Drops of Knowledge</a></li>
-					<li><a href="#">Resources</a></li>
+                    <li><a href="/islamic-voyage/">A Journey Into Islam</a></li>
+                    <li><a href="/islamic-voyage/prayer-times/">Prayer Times</a></li>
+                    <li><a href="/islamic-voyage/quran/">Quran</a></li>
+                    <li><a href="/islamic-voyage/world-at-large/">The World at Large</a></li>
+					          <li><a href="/islamic-voyage/resources/">Resources</a></li>
                   </ul>
                 </li>
-				<li><a href="../../gallery">Gallery</a></li>
-				<li><a href="../../webmasters/">The Webmasters</a></li>
-				<li><a href="../../contact-us/">Contact</a></li>
+				<li><a href="/gallery">Gallery</a></li>
+				<li><a href="/webmasters/">The Webmasters</a></li>
+				<li><a href="/contact-us/">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -96,48 +103,182 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="background-color:white;width:1140px">
 
       <div class="blog-header" align="center">
-        <img src="StillLifeWithASkull.jpg" width="750" height="450"/>
-        <h1 class="blog-title">Memento Mori</h1>
-        <p class="lead blog-description">Life. Death. Time.</p>
+        <h1 class="blog-title">Captured Memories</h1>
+        <p class="lead blog-description">The moments of today, that will wow our hearts tomorrow</p>
       </div>
     
-      <div class="blog-header" align="center">
-        <h3 class="blog-title">This too shall pass</h3>
-        <h4>It is said an Eastern monarch once charged his wise men to invent him a sentence, to be ever in view, and which should be true and appropriate in all times and situations. They presented him the words: "And this, too, shall pass away." How much it expresses! How chastening in the hour of pride! How consoling in the depths of affliction!</h4>
-      </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+    <li data-target="#myCarousel" data-slide-to="6"></li>
+    <li data-target="#myCarousel" data-slide-to="7"></li>
+    <li data-target="#myCarousel" data-slide-to="8"></li>
+    <li data-target="#myCarousel" data-slide-to="9"></li>
+    <li data-target="#myCarousel" data-slide-to="10"></li>
+    <li data-target="#myCarousel" data-slide-to="11"></li>
+    <li data-target="#myCarousel" data-slide-to="12"></li>
+    <li data-target="#myCarousel" data-slide-to="13"></li>
+    <li data-target="#myCarousel" data-slide-to="14"></li>
+    <li data-target="#myCarousel" data-slide-to="15"></li>
+    <li data-target="#myCarousel" data-slide-to="16"></li>
+    <li data-target="#myCarousel" data-slide-to="17"></li>
+    <li data-target="#myCarousel" data-slide-to="18"></li>
+  </ol>
 
-      <div class="blog-header" align="center">
-        <h3 class="blog-title">Ozymandias</h3>
-        <h5>Percy B. Shelly</h5>
-        <p>I met a traveller from an antique land,</p>
-        <p>Who said—“Two vast and trunkless legs of stone</p>
-        <p>Stand in the desert. . . . Near them, on the sand,</p>
-        <p>Half sunk a shattered visage lies, whose frown,</p>
-        <p>And wrinkled lip, and sneer of cold command,</p>
-        <p>And wrinkled lip, and sneer of cold command,</p>
-        <p>Which yet survive, stamped on these lifeless things,</p>
-        <p>The hand that mocked them, and the heart that fed;</p>
-        <p>And on the pedestal, these words appear:</p>
-        <p>My name is Ozymandias, King of Kings;</p>
-        <p>Look on my Works, ye Mighty, and despair!</p>
-        <p>Nothing beside remains. Round the decay</p>
-        <p>Of that colossal Wreck, boundless and bare</p>
-        <p>The lone and level sands stretch far away.”</p>
-      </div>
-    
-    <div class="blog-header" align="center">
-      <h3 class="blog-title">Remeber your mortality</h3>
-      <p class="lead blog-description">Tousif will do this soon</p>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/01.jpg">
+    </div>
+
+    <div class="item">
+      <img src="img/02.jpg">
+    </div>
+
+    <div class="item">
+      <img src="img/04.jpg">
     </div>
     
-      <footer class="blog-footer">
-        <p>&copy; 2016 Tech Taqwa 3283 &middot;</p>
+    <div class="item">
+      <img src="img/05.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/06.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/07.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/08.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/09.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/13.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/14.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/15.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/16.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/17.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/img/02.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/img/03.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/img/06.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/img/07.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/img/08.jpg">
+    </div>
+    
+    <div class="item">
+      <img src="img/img/10.jpg">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+
+<!--    
+    <div class="blog-header" align="center">
+      <h3 class="blog-title">End of the Year MSA Picnic</h3>
+      <p class="lead blog-description">What other way to end a long, stressful, hardworking year than with a good old picnic full of friends and full of fun. The epic waterballoon fight has everyong "soaking" in laughter. </p>
+    </div>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+-->
+  <!-- Wrapper for slides -->
+  <!--
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/01.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="img/02.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="img/03.jpg" alt="Flower">
+    </div>
+
+    <div class="item">
+      <img src="img/04.jpg" alt="Flower">
+    </div>
+  </div>
+  -->
+
+  <!-- Left and right controls -->
+  <!--
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+-->
+    
+    </br></br>
+      <footer>
+        <p>&copy; 2016 Tech Taqwa <a href = "https://www.facebook.com/techtaqwa/?fref=ts"><img src = "../../misc/facebook.png"/> </a> <a href = "https://www.instagram.com/techtaqwa/"><img src = "../../misc/instagram.png"/></a> <a href = "https://ask.fm/techtaqwa"><img src = "../../misc/ask.png"></a> <a href = "https://twitter.com/tech_taqwa_msa"><img src = "../../misc/twitter.png"/></a> <a href = "http://tic-techtaqwa.tumblr.com/"><img src = "../../misc/tumblr.png"/></a></p>
       </footer>
     </div><!-- /.container -->
-
 
 
     <!-- Bootstrap core JavaScript
@@ -146,6 +287,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
